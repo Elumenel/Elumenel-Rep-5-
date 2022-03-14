@@ -1,0 +1,40 @@
+<b>Fecha:</b> 13-2-2022 18:04
+<b>Cliente:</b> Joel Gómez
+<b>Email</b>: jojo@gmail.com
+<b>Novedad</b>: Recibo enviado por correo electrónico al cliente.
+..........
+<b>Fecha:</b> 13-2-2022 18:06
+<b>Cliente</b>: Marta Copiaco
+<b>Email</b>: tita@gmail.com
+<b>Novedad</b>: Pago acreditado. 
+..........
+<b>Fecha:</b> 13-2-2022 18:08
+<b>Cliente</b>: Elvira Munch
+<b>Email</b>: emunch@gmail.com
+<b>Novedad</b>: Producto enviado por Correo Argentino. Número de seguimiento 581522842251.
+..........
+<b>Fecha:</b> 13-2-2022 18:10
+<b>Cliente</b>: Octavio Gramsci
+<b>Email</b>: elrojo@gmail.com
+<b>Novedad</b>: Producto preparado para despachar.
+..........
+<b>Fecha:</b> 13-2-2022 18:12
+<b>Cliente</b>: René Feuillade
+<b>Email</b>: laranita@gmail.com
+<b>Novedad</b>: Pago NO acreditado. Necesita seguimiento.
+..........
+<b>Fecha:</b> 13-2-2022 19:45
+<b>Cliente:</b> Mirita Arocena
+<b>Email:</b> marocena@gmail.com
+<b>Novedad:</b> Pedido recibido en domicilio del cliente.
+..........
+<b>Fecha:</b> 14-2-2022 9:39
+<b>Cliente:</b> Ramón Iturraspe
+<b>Email:</b> r.iturraspe@hotmail.com
+<b>Novedad:</b> Orden CANCELADA. Realizar seguimiento!
+..........
+<b>Fecha:</b> 16-2-2022 8:33
+<b>Cliente:</b> Marta Donda
+<b>Email:</b> dondamarta@gmail.com
+<b>Novedad:</b> Nuevo cliente agregado.
+..........

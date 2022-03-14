@@ -1,0 +1,766 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* ╔═══════════════ ✿.｡.:* ☆:**:. Navbar .:**:.☆*.:｡.✿ ═══════════════╗ */
+
+.navbar {
+  background-color: LemonChiffon !important;
+}
+
+.navbar li i {
+  font-size: 150%;
+  color: DarkTurquoise;
+  padding-right: 15px;
+}
+
+.navbar li i:hover {
+  color: DeepPink;
+}
+
+
+/* ╔══════════════ ✿.｡.:* ☆:**:. Sidebar .:**:.☆*.:｡.✿ ══════════════╗ */
+
+.sidebar-container {
+  position: fixed;
+  height: 100%;
+  width: 225px;
+  background-color: LightYellow;
+}
+
+.accordion {
+  position: relative;
+  margin: 75px 10px 10px 0px;
+}
+
+.sidebar-accordion .label {
+  position: relative;
+  padding: 5px 0;
+  margin-left: 25px;
+  cursor: pointer;
+  font-style: 'Raleway';
+  font-size: 115%;
+  font-weight: 500;
+  color: DarkTurquoise
+}
+
+.sidebar-accordion .label:hover {
+  color: DeepPink;
+}
+
+.sidebar-accordion .label-1 {
+  font-size: 120%;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.label-1 a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.label-1 a:hover {
+  color: currentColor;
+}
+
+.sidebar-accordion .label i {
+  padding-left: 5px;
+  font-size: 75%;
+}
+
+.sidebar-nav li {
+  list-style: none;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.sidebar-nav li a {
+  text-decoration: none;
+  color: DarkGray;
+}
+
+.sidebar-nav li a:hover {
+  color: HotPink;
+}
+
+/* THE ACCORDION EFFECT */
+.sidebar-accordion .sidebar-nav {
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.sidebar-accordion.active .sidebar-nav {
+  height: auto;
+}
+
+.sidebar-accordion.active .fa-chevron-down {
+  transform: rotate(180deg);
+  padding-right: 7px;
+  padding-top: 2px;
+}
+
+/* THE HOVER SHOW/HIDE EFFECT (FOR SMALLER SCREENS) */
+@media only screen and (max-device-width: 1600px) {
+  .sidebar-container{
+    /* the collapsed sidebar */
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    overflow: hidden;
+    padding-top: 5px;
+    background-color: LightYellow;
+    transition: width .05s linear;
+    z-index: 1000;
+  }
+
+  .sidebar-container:hover {
+    /* the full-sized bar */
+    width: 225px;
+    overflow:visible;
+  }
+
+  .sidebar-container .nav-icon {
+    margin-left: -7px;
+  }
+
+  .sidebar-container .nav-text {
+    display: none;
+  }
+
+  .sidebar-container:hover .nav-text {
+    display: contents;
+    overflow: visible;
+  }
+
+  .sidebar-container .sidebar-accordion .sidebar-nav {
+    display: none;
+    overflow: visible;
+  }
+
+  .sidebar-container:hover .sidebar-accordion.active .sidebar-nav {
+    display: block;
+    height: auto;
+  }
+
+  .sidebar-accordion.active .fa-chevron-down {
+    transform: rotate(180deg);
+    padding-right: 7px;
+    padding-top: 2px;
+  }
+
+  .main-container .table-header, .add-new {
+    margin-left: -400px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+.embedded-form {
+    width: 100%;
+    margin-left: 535px;
+
+  }
+
+ .thank-you {
+   width: 110%;
+   margin-left: -250px;
+ }
+
+  .corkboard ul {
+    margin-left: -250px;
+    width: 100%;
+  }
+
+  .form-container, #nproduct-container {
+    margin-left: -210px;
+  }
+
+  .table-container {
+    width: 105%;
+    margin-left: -225px
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .corkboard ul{
+    margin-left: -450px;
+    width: 130%;
+  }
+
+  .embedded-form {
+      width: 100%;
+      margin-left: 490px;
+    }
+
+  .thank-you {
+    width: 110%;
+    margin-left: -260px;
+  }
+}
+
+
+/* ╔═════════════ ✿.｡.:* ☆:**:. Footer .:**:.☆*.:｡.✿ ═════════════╗ */
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer a {
+  padding: 5px;
+  font-family: 'Raleway';
+  font-size: 275%;
+  font-weight: bold;
+  color: HotPink;
+}
+
+footer a:hover {
+  color: DeepPink;
+}
+
+/* THE STICKY FOOTER EFFECT */
+html, body {
+  height: 100%;
+}
+
+body footer {
+  position: sticky;
+  top: 100vh;
+}
+
+/* OPTION 2: ALWAYS IN BOTTOM RIGHT CORNER OF VISIBLE SCREEN */
+/* footer{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+} */
+
+
+/* ╔═════════════ ✿.｡.:* ☆:**:. Tables .:**:.☆*.:｡.✿ ═════════════╗ */
+
+.main-container {
+  margin-left: 350px;
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+.table-header {
+  padding-bottom: 25px;
+  font-family: 'Raleway';
+}
+
+.table-header h1 {
+  font-weight: bold;
+  color: DarkTurquoise;
+}
+
+.table-header h2 {
+  color: DarkGray;
+  margin-top: -10px;
+}
+
+.table-name {
+  font-weight: bold;
+}
+
+.table-description {
+  color: DarkGray;
+}
+
+td .img-container {
+  height: 75px;
+  width: 75px;
+  border: solid 1px WhiteSmoke;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+td .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+td .state-container .badge {
+  padding: 5px 10px 6px 10px;
+}
+
+.fa-times, .fa-expand-alt {
+  color: Black;
+  padding: 10px;
+}
+
+.fa-times:hover {
+  color: OrangeRed;
+}
+
+.fa-expand-alt:hover {
+  color: SeaGreen;
+}
+
+.table-row:hover {
+  background-color: Azure;
+}
+
+
+/* ╔═════════════ ✿.｡.:* ☆:**:. Forms .:**:.☆*.:｡.✿ ═════════════╗ */
+
+.col-12 h4 {
+  margin-top: 25px;
+  margin-bottom: -10px;
+  color: Turquoise;
+}
+
+.status-radio {
+  padding-left: 125px;
+}
+
+input, select, select option, textarea, label, .form-text, .small-green-button {
+  font-family: 'Raleway';
+}
+
+.form-text {
+  font-size: 75%;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: Snow !important;
+  box-shadow: inset 0 2px 3px rgb(224, 255, 255, 0.075), 0 0 8px rgb(0, 206, 209, 2) !important;
+}
+
+.currency-input {
+  display: inline-flex;
+}
+
+.currency-input span {
+  margin-top: 7px;
+  padding-right: 5px;
+  font-family: 'Raleway';
+  color: DarkTurquoise;
+}
+
+.small-green-button {
+  margin-top: 25px;
+  background-color:DarkTurquoise;
+  border:0px;
+}
+
+.btn-primary:hover {
+  background-color:LimeGreen;
+  border:0px;
+}
+
+.btn-secondary:hover {
+  background-color:OrangeRed;
+  border:0px;
+}
+
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+  border: 0px;
+  background-color: MediumTurquoise !important
+}
+
+.readonly-form input {
+  color: Gray;
+  background-color: LightCyan !important;
+  border: 0px;
+}
+
+.readonly-form input:focus {
+  color: Gray;
+  box-shadow: none !important;
+}
+
+/* THE NON-JS TOOLTIP */
+.fa-circle-question {
+  color: DarkTurquoise;
+  cursor: help;
+}
+
+.mytooltip {
+  position: relative;
+}
+
+.mytooltip:before {
+  display:none; /* <== */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+  margin-left: 15px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  content: attr(data-text);
+  background: LightPink;
+  font-family: 'Raleway';
+  font-size: 90%;
+  color: White;
+  text-align:center;
+}
+
+.mytooltip:hover:before {
+  display: block;
+}
+
+/* AND THE TOOLTIP'S ARROW-Y TIP */
+.mytooltip:after {
+  display:none;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:100%;
+  margin-left:-5px;
+  content: "";
+  border:10px solid #000;
+  border-color: transparent LightPink transparent transparent;
+}
+
+.mytooltip:hover:before, .mytooltip:hover:after {
+  display: block;
+}
+
+/* THE IMITATION 'PLEASE FILL OUT THIS FIELD' MESSAGE */
+.fill-container {
+  position: relative;
+  width: 85%;
+  margin-top: 10px;
+  margin-left: 15px;
+  border: 1px solid Gray;
+  border-radius: 5px;
+}
+
+.please-fill {
+  padding: 8px;
+}
+
+.please-text {
+  padding-left: 7px;
+  font-size: 90%;
+}
+
+.please-icon {
+  padding: 2px 9px 2px 9px;
+  border-radius: 2px;
+  font-family: 'Tahoma';
+  font-size: 100%;
+  font-weight: bold;
+  color: White;
+  background-color: Orange;
+}
+
+/* AND THE IMITATION 'PLEASE FILL OUT THIS FIELD' MESSAGE'S ARROW-Y TIP */
+.fill-container:before {
+  position: absolute;
+  top: -7.4px;
+  left: 15px;
+  height: 13px;
+  width: 13px;
+  transform: rotate(45deg);
+  background-color: White;
+  content: "";
+  border-top: 1px solid Gray;
+  border-left: 1px solid Gray;
+}
+
+.photo-readonly {
+  margin-left: 75px;
+}
+
+.exp-photo {
+  position: absolute;
+  width: 25%;
+  padding: 5px;
+  background-color: LightCyan;
+  border-radius: 5px;
+}
+
+.exp-photo img {
+  max-height: 500px;
+}
+
+.sm-photo {
+  position: absolute;
+  width: 15%;
+  padding: 5px;
+  background-color: Snow;
+  border: solid 1px #ced4da;
+  border-radius: 5px;
+}
+
+.exp-photo img, .sm-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#mod-foto {
+  margin-top: 33px;
+  margin-left: -216px;
+}
+
+#displaced-tooltip {
+  position: absolute;
+  margin-top: -33px;
+  margin-left: 175px;
+}
+
+/* THE MODAL IMAGE */
+#modal-trigger {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: -25px;
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  overflow: auto;
+  background-color: rgba(255, 250, 250, 0.90);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close-modal {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  color: DarkTurquoise;
+  font-size: 40px;
+  transition: 0.3s;
+}
+
+.close-modal:hover, .close-modal:focus {
+  color: DeepPink;
+  cursor: pointer;
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .modal {
+    width: 95%;
+    padding-top: 100px;
+  }
+
+  .close-modal {
+    right: 85px;
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .modal {
+    padding-top: 50px;
+  }
+}
+
+
+/* ╔══════════════ ✿.｡.:* ☆:**:. Login .:**:.☆*.:｡.✿ ═══════════════╗ */
+
+.login-container {
+  width: 25%;
+  margin-top: 200px;
+  padding: 75px 62px 75px 62px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  /*border-radius: 50px;*/
+  background-color: LemonChiffon;
+  text-align: center;
+}
+
+.fa-id-card-clip {
+  font-size: 190%;
+  color: DarkTurquoise;
+}
+
+#showme {
+  margin-top: 10px;
+  margin-left: -15px;
+  color: DarkTurquoise;
+}
+
+.login-container h1 {
+  padding: 15px 0px 30px 0px;
+  font-family: 'Raleway';
+  font-weight: bold;
+  color: DarkTurquoise;
+}
+
+.login-container form input {
+  border: 0px;
+  border-radius: 5px;
+}
+
+.login-container form input::placeholder {
+  color: Gainsboro;
+}
+
+.log-me-in {
+  width: 100%;
+}
+
+.log-me-in:hover {
+  background-color: Cyan
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .login-container {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .login-container {
+    width: 33%;
+  }
+}
+
+
+/* ╔═════════════ ✿.｡.:* ☆:**:. Post-its .:**:.☆*.:｡.✿ ═════════════╗ */
+
+.corkboard ul, li {
+  list-style: none;
+  text-align: left;
+}
+
+.corkboard ul {
+  overflow: hidden;
+  padding: 25px;
+  /* THE SHUFFLE TO MAKE LAST ENTRY APPEAR FIRST */
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+.post-it {
+  display: block;
+  float: left;
+  margin: 25px;
+  padding: 20px;
+  height: 275px;
+  width: 255px;
+  background: #f6ff7a;
+  box-shadow: 3px 3px 10px Gray;
+  transition: transform .15s linear;
+}
+
+.note-date {
+  margin-bottom: 10px;
+  font-family: 'Raleway';
+  font-size: 110%
+}
+
+.note-content {
+  margin-bottom: 8px;
+  font-family: 'Raleway';
+  font-size: 95%
+}
+
+/* THE DIFFERENT POSSITIONS AND COLORS */
+.corkboard ul li:nth-child(even) {
+  position: relative;
+  top: 5px;
+  transform: rotate(4deg);
+}
+
+.corkboard ul li:nth-child(3n) {
+  position: relative;
+  top: -5px;
+  transform: rotate(-3deg);
+  background: LightPink;
+}
+
+.corkboard ul li:nth-child(5n) {
+  position: relative;
+  top: -10px;
+  transform: rotate(5deg);
+  background: LightSkyBlue;
+}
+
+.corkboard ul li:hover, ul li:focus {
+  position: relative;
+  z-index: 5;
+  box-shadow: 10px 10px 7px Gray;
+  transform: scale(1.25);
+}
+
+
+/* ╔════════════ ✿.｡.:* ☆:**:. Nueva Novedad .:**:.☆*.:｡.✿ ═════════════╗ */
+
+.call-to-action {
+  text-align: center;
+  font-family: 'Raleway';
+  letter-spacing: 1px;
+}
+
+.call-to-action i {
+  color: DarkTurquoise !important;
+}
+
+.call-to-action i:hover {
+  color: DeepPink !important;
+}
+
+.collapsible-form {
+  margin: 0px 175px 0px 175px;
+  padding: 25px;
+  background-color: LavenderBlush
+}
+
+#form-novedad {
+  width: 50%;
+}
+
+#add-pic {
+  margin-top: 5px;
+  font-size: 75%;
+}
+
+.thank-you {
+  margin-top: -31px;
+  text-align: center;
+}
+
+.alert-info {
+  font-family: 'Raleway';
+  font-size: 150%;
+  border: 0px;
+  background-color: rgb(255, 182, 193, .75);
+  color: White;
+}
+
+.alert-danger {
+  font-family: 'Raleway';
+  font-size: 150%;
+  border: 0px;
+  background-color: rgb(255, 69, 0, .75);
+  color: White;
+}
+
+#alert-captcha, #alert-credentials {
+  width: 125%;
+  margin-top: -25px;
+  margin-left: -42px;
+  font-size: 100%;
+}
+
+#alert-login {
+  margin-top: 250px;
+}
